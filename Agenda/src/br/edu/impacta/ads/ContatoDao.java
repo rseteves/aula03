@@ -28,4 +28,16 @@ public class ContatoDao implements IContatoDao {
 		return contatos.contains(c);
 	}
 
+	@Override
+	public void update(Contato c, Contato cNew) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove(Contato c) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
