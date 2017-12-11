@@ -27,5 +27,9 @@ public class ContatoDao implements IContatoDao {
 	public boolean existe(Contato c) {
 		return contatos.contains(c);
 	}
+	
+	public List<Contato> listar() {		
+		return contatos;
+	}
 
 }

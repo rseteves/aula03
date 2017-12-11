@@ -15,6 +15,7 @@ public class AgendaApp {
 		while (!sair) {
 			int opcao = apresentarMenuPrincipal();
 			switch(opcao) {
+			case 0: listarContato(); break;
 			case 1: inserirContato(); break;
 			case 2: buscarContato(); break;
 			case 3: sair = true; break;
@@ -29,6 +30,7 @@ public class AgendaApp {
 		int opcao = 0;
 		while(!inteiro) {
 			out.println("\nAGENDA TELEFONICA!");
+			out.println("(0) Listar");
 			out.println("(1) Inserir");
 			out.println("(2) Buscar");
 			out.println("(3) Sair");
@@ -99,6 +101,21 @@ public class AgendaApp {
 
 		if (resultado.size() == 0) {
 			out.println("Nao ha contato com este nome!");
+		} else {
+			out.println("\nResultado da busca:");
+			for (Contato c: resultado) {
+				out.println(c);
+			}
+		}
+	}
+	
+	private static void listarContato() {
+		out.println("\nLISTA DE CONTATOS:");
+		
+		List<Contato> resultado = dao.listar(); 
+
+		if (resultado.size() == 0) {
+			out.println("Nao ha contato cadastrado!");
 		} else {
 			out.println("\nResultado da busca:");
 			for (Contato c: resultado) {
