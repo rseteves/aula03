@@ -1,4 +1,13 @@
-# aula03
+# AULA 3 - DEVOPS - AGENDA
 
+## Objetivo
 
-test fiote
+Agenda para cadastrar, localizar e listar contatos.
+
+## Instalação
+
+baixar o repositório
+```
+	https://github.com/leandrobudau/aula03
+ 
+```
