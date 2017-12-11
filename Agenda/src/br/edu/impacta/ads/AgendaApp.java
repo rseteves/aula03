@@ -91,6 +91,11 @@ public class AgendaApp {
 	}
 
 	private static void buscarContato() {
+
+		
+		
+		
+		
 		out.println("\nBUSCA DE CONTATOS:");
 		String nome = lerNome();
 
