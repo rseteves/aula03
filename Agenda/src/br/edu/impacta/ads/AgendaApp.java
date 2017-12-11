@@ -94,7 +94,7 @@ public class AgendaApp {
 		out.println("\nBUSCA DE CONTATOS:");
 		String nome = lerNome();
 
-		List<Contato> resultado = dao.buscar(nome);
+		List<Contato> resultado = dao.buscar(nome); 
 
 
 		if (resultado.size() == 0) {
