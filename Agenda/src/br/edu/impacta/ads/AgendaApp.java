@@ -45,23 +45,22 @@ public class AgendaApp {
 	}
 
 	private static void inserirContato() {
-//		out.println("\nINSERCAO DE NOVO CONTATO:");
-//		String nome = lerNome();
-//		String telefone = lerTelefone();
-//		Contato c = new Contato(nome, telefone);
-//
-//		// if (contatos.contains(c)) {
-//		if (dao.existe(c)) {
-//
-//			out.println("Este contato ja esta cadastrado!");
-//		}
-//		else {
-//
-//			// contatos.add(c);
-//			dao.inserir(c);
-//
-//			out.println("Contato inserido!");
-//		}
+		out.println("\nINSERCAO DE NOVO CONTATO:");
+		String nome = lerNome();
+		String telefone = lerTelefone();
+		Contato c = new Contato(nome, telefone);
+		// if (contatos.contains(c)) {
+		if (dao.existe(c)) {
+
+			out.println("Este contato ja esta cadastrado!");
+		}
+		else {
+
+			// contatos.add(c);
+			dao.inserir(c);
+
+			out.println("Contato inserido!");
+		}
 	}
 
 	private static String lerNome() {
