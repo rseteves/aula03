@@ -91,20 +91,20 @@ public class AgendaApp {
 	}
 
 	private static void buscarContato() {
-//		out.println("\nBUSCA DE CONTATOS:");
-//		String nome = lerNome();
-//
-//		List<Contato> resultado = dao.buscar(nome);
-//
-//
-//		if (resultado.size() == 0) {
-//			out.println("Nao ha contato com este nome!");
-//		} else {
-//			out.println("\nResultado da busca:");
-//			for (Contato c: resultado) {
-//				out.println(c);
-//			}
-//		}
+		out.println("\nBUSCA DE CONTATOS:");
+		String nome = lerNome();
+
+		List<Contato> resultado = dao.buscar(nome);
+
+
+		if (resultado.size() == 0) {
+			out.println("Nao ha contato com este nome!");
+		} else {
+			out.println("\nResultado da busca:");
+			for (Contato c: resultado) {
+				out.println(c);
+			}
+		}
 	}
 
 }
