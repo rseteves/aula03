@@ -18,6 +18,7 @@ public class AgendaApp {
 			case 1: inserirContato(); break;
 			case 2: buscarContato(); break;
 			case 3: sair = true; break;
+			case 4: deletarContato(); break;
 			default: out.println("ERRO: opcao invalida!");
 			}
 		}
@@ -45,23 +46,23 @@ public class AgendaApp {
 	}
 
 	private static void inserirContato() {
-//		out.println("\nINSERCAO DE NOVO CONTATO:");
-//		String nome = lerNome();
-//		String telefone = lerTelefone();
-//		Contato c = new Contato(nome, telefone);
-//
-//		// if (contatos.contains(c)) {
-//		if (dao.existe(c)) {
-//
-//			out.println("Este contato ja esta cadastrado!");
-//		}
-//		else {
-//
-//			// contatos.add(c);
-//			dao.inserir(c);
-//
-//			out.println("Contato inserido!");
-//		}
+		out.println("\nINSERCAO DE NOVO CONTATO:");
+		String nome = lerNome();
+		String telefone = lerTelefone();
+		Contato c = new Contato(nome, telefone);
+
+		// if (contatos.contains(c)) {
+		if (dao.existe(c)) {
+
+			out.println("Este contato ja esta cadastrado!");
+		}
+		else {
+
+			// contatos.add(c);
+			dao.inserir(c);
+
+			out.println("Contato inserido!");
+		}
 	}
 
 	private static String lerNome() {
@@ -91,20 +92,41 @@ public class AgendaApp {
 	}
 
 	private static void buscarContato() {
-//		out.println("\nBUSCA DE CONTATOS:");
-//		String nome = lerNome();
-//
-//		List<Contato> resultado = dao.buscar(nome);
-//
-//
-//		if (resultado.size() == 0) {
-//			out.println("Nao ha contato com este nome!");
-//		} else {
-//			out.println("\nResultado da busca:");
-//			for (Contato c: resultado) {
-//				out.println(c);
-//			}
-//		}
-	}
+	
+		out.println("\nBUSCA DE CONTATOS:");
+		String nome = lerNome();
 
+		List<Contato> resultado = dao.buscar(nome);
+
+
+		if (resultado.size() == 0) {
+			out.println("Nao ha contato com este nome!");
+		} else {
+			out.println("\nResultado da busca:");
+			for (Contato c: resultado) {
+				out.println(c);
+			}
+		}
+	}
+	
+	private static void deletarContato() {
+		out.println("\nDELETAR CONTATO:");
+		String nome = lerNome();
+
+		List<Contato> resultado = dao.buscar(nome); 
+
+
+		if (resultado.size() == 0) {
+			out.println("Nao há contato com este nome!");
+		} else {
+
+			for (int i = 0 ; i<resultado.size(); i++ ) {
+				
+				if (resultado.get(i).getNome().equals(nome) ) {
+					resultado.remove(i);
+				}			
+			}
+				
+		}
+	}
 }
