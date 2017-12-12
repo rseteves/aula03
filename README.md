@@ -8,7 +8,8 @@ Agenda para cadastrar, localizar e listar contatos.
 
 baixar o repositório
 ```javascript
-
 	https://github.com/leandrobudau/aula03
- 
 ```
+
+## Dependências
+Java (JDK)
