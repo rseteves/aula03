@@ -18,6 +18,7 @@ public class AgendaApp {
 			case 1: inserirContato(); break;
 			case 2: buscarContato(); break;
 			case 3: sair = true; break;
+			case 4: deletarContato(); break;
 			default: out.println("ERRO: opcao invalida!");
 			}
 		}
@@ -91,11 +92,7 @@ public class AgendaApp {
 	}
 
 	private static void buscarContato() {
-
-		
-		
-		
-		
+	
 		out.println("\nBUSCA DE CONTATOS:");
 		String nome = lerNome();
 
@@ -111,5 +108,25 @@ public class AgendaApp {
 			}
 		}
 	}
+	
+	private static void deletarContato() {
+		out.println("\nDELETAR CONTATO:");
+		String nome = lerNome();
 
+		List<Contato> resultado = dao.buscar(nome); 
+
+
+		if (resultado.size() == 0) {
+			out.println("Nao há contato com este nome!");
+		} else {
+
+			for (int i = 0 ; i<resultado.size(); i++ ) {
+				
+				if (resultado.get(i).getNome().equals(nome) ) {
+					resultado.remove(i);
+				}			
+			}
+				
+		}
+	}
 }
