@@ -6,4 +6,5 @@ public interface IContatoDao {
 	List<Contato> buscar(String nome);
 	void inserir(Contato c);
 	boolean existe(Contato c);
+	List<Contato> listar();
 }

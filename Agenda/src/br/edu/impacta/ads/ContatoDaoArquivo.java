@@ -70,5 +70,12 @@ public class ContatoDaoArquivo implements IContatoDao {
 		List<Contato> contatos = lerTodos();
 		return contatos.contains(c);
 	}
+	
+	@Override
+	public List<Contato> listar() {
+		List<Contato> contatos = lerTodos();
+		
+		return contatos;
+	}
 
 }
