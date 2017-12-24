@@ -45,6 +45,7 @@ public class ContatoDaoArquivo implements IContatoDao {
 			System.out.println("Arquivo nao encontrado!");
 		}
 	}
+	
 
 	@Override
 	public List<Contato> buscar(String nome) {
@@ -64,7 +65,22 @@ public class ContatoDaoArquivo implements IContatoDao {
 		contatos.add(c);
 		gravar(contatos);
 	}
+	
+	@Override
+	public void update(Contato c, Contato cNew) {
+		List<Contato> contatos = lerTodos();
+		contatos.remove(c);
+		contatos.add(cNew);
+		gravar(contatos);
+	}
 
+	@Override
+	public void remove(Contato c) {
+		List<Contato> contatos = lerTodos();
+		contatos.remove(c);
+		gravar(contatos);
+	}
+	
 	@Override
 	public boolean existe(Contato c) {
 		List<Contato> contatos = lerTodos();
