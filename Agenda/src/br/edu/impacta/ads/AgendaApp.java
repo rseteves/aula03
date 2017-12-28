@@ -17,7 +17,8 @@ public class AgendaApp {
 			switch(opcao) {
 			case 1: inserirContato(); break;
 			case 2: buscarContato(); break;
-			case 3: sair = true; break;
+			case 3: excluirContato(); break;
+			case 4: sair = true; break;
 			default: out.println("ERRO: opcao invalida!");
 			}
 		}
@@ -31,7 +32,8 @@ public class AgendaApp {
 			out.println("\nAGENDA TELEFONICA!");
 			out.println("(1) Inserir");
 			out.println("(2) Buscar");
-			out.println("(3) Sair");
+			out.println("(3) Excluir");
+			out.println("(4) Sair");
 			out.print("Escolha uma opcao: ");
 			String s = entrada.nextLine();
 			try {
@@ -88,6 +90,26 @@ public class AgendaApp {
 			} else { valido = true; }
 		}
 		return telefone;
+	}
+	
+	private static void excluirContato() {
+		out.println("\nEXLUSÃO DE CONTATO:");
+
+		List<Contato> resultado = dao.exibirTodos();
+
+		if (resultado.size() == 0) {
+			out.println("Nao ha contato!");
+		} else {
+			out.println("\nResultado da busca:");
+			for (int i = 0; i < resultado.size(); i++) {
+				out.println("Digito = "+i+"|| "+ resultado.get(i));
+			}
+			out.print("Coloque o digito do contato a ser excluido: ");
+			String s = entrada.nextLine();
+			dao.excluir(resultado.get(Integer.parseInt(s)));
+			out.print("Contato Excluido com Sucesso");
+		}
+		
 	}
 
 	private static void buscarContato() {
