@@ -5,8 +5,8 @@
 Agenda para cadastrar, localizar e listar contatos.
 
 ## Dependências
-Java
-JDK
++ Java - [download](https://www.java.com/pt_BR/)
++ JDK - [download](http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html)
 
 ## Download
 1. Entrar no console de seu sistema operacional
