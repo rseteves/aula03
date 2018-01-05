@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Agenda para cadastrar, localizar e listar contatos.
+Agenda para cadastrar, localizar, excluir contatos.
 
 ## Dependências
 + Java - Caso no tenha, faça o [download](https://www.java.com/pt_BR/)
