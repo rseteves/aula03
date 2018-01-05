@@ -31,6 +31,9 @@ JDK
 ```
 2. Surgira a interface do programa para interação com usuário.
 
+	![Interface principal do sistema](https://github.com/leandrobudau/aula03/blob/master/Agenda/screen-main.png)
+
+
 ## Desenvolvimento
 Este programa possui algumas funções
 ### Inserir
