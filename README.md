@@ -42,6 +42,8 @@ Permite inserir um contato novo. É solicitado o nome e telefone do contato
 Permite buscar um contato já cadastrado. A busca é realizada por meio do campo nome.
 ### Listar
 Permite listar todos os contatos cadastrados.
+### Atualizar
+Permite atualizar contato. A atualização é baseada na busca do nome do contato. Caso exista a atualização é feita.
 ### Excluir
 Permite excluir um contato existente. A exclusão é realizada por meio do campo nome.
 ### Sair
