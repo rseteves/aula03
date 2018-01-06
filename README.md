@@ -7,14 +7,14 @@ Agenda para cadastrar, localizar, excluir contatos.
 ## Dependências
 + Java - Caso no tenha, faça o [download](https://www.java.com/pt_BR/)
 + JDK - Caso no tenha, faça o [download](http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html)
++ GIT - Caso no tenha, faça o [download](https://git-scm.com/downloads)
 
 ## Download
-1. Entrar no console de seu sistema operacional
-   Caso não saiba como fazer isto acesse o link abaixo e siga os procedimentos informados:  
+1. Entrar no prompt de comando de seu sistema operacional. Caso não saiba como fazer isto acesse o link abaixo e siga os procedimentos informados:  
    + [Windows](https://pt.wikihow.com/Abrir-o-Prompt-de-Comando-no-Windows)
    + [Linux UBUNTU](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
  
-   Para os demais sistemas operacionais, por favor, consultar a internet. Existem varias explicações de como entrar no terminal
+   Para os demais sistemas operacionais, por favor, consultar a internet.
 	
 2. Fazer o clone do repositório
 ```javascript
