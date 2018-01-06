@@ -34,12 +34,14 @@ Agenda para cadastrar, localizar, excluir contatos.
 	![Interface principal do sistema](https://github.com/leandrobudau/aula03/blob/master/Agenda/screen-main.png)
 
 
-## Desenvolvimento
+## Funcionalidades
 Este programa possui algumas funções
 ### Inserir
 Permite inserir um contato novo. É solicitado o nome e telefone do contato
 ### Buscar 
 Permite buscar um contato já cadastrado. A busca é realizada por meio do campo nome.
+### Listar
+Permite listar todos os contatos cadastrados.
 ### Excluir
 Permite excluir um contato existente. A exclusão é realizada por meio do campo nome.
 ### Sair
