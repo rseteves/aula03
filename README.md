@@ -10,6 +10,12 @@ Agenda para cadastrar, localizar, excluir contatos.
 
 ## Download
 1. Entrar no console de seu sistema operacional
+   Caso não saiba como fazer isto acesse o link abaixo e siga os procedimentos informados:  
+   + [Windows](https://pt.wikihow.com/Abrir-o-Prompt-de-Comando-no-Windows)
+   + [Linux UBUNTU](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
+ 
+   Para os demais sistemas operacionais, por favor, consultar a internet. Existem varias explicações de como entrar no terminal
+	
 2. Fazer o clone do repositório
 ```javascript
 	git clone https://github.com/rseteves/aula03.git
