@@ -1,5 +1,5 @@
 # AULA 3 - DEVOPS - AGENDA
-
+Atualizado em 05 de janeiro de 2018 23:11
 ## Objetivo
 
 Agenda para cadastrar, localizar, excluir contatos.
@@ -15,7 +15,7 @@ Agenda para cadastrar, localizar, excluir contatos.
    + [Linux UBUNTU](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
    + Para os demais sistemas operacionais, por favor, consultar a internet.
 	
-2. Fazer o clone do repositório (Copie o cédigo e cole n0 prompt de comando).
+2. Fazer o clone do repositório (Copie o código e cole no prompt de comando).
 ```javascript
 	git clone https://github.com/rseteves/aula03.git
 ```
@@ -24,7 +24,7 @@ Agenda para cadastrar, localizar, excluir contatos.
 ```javascript
 	cd aula03/Agenda/src
 ```
-2. Fazer a compilação do projeto (Copie o cédigo e cole no prompt de comando).
+2. Fazer a compilação do projeto (Copie o código e cole no prompt de comando).
 ```javascript
 	javac br/edu/impacta/ads/*.java
 	jar cvfe AgendaApp.jar br.edu.impacta.ads.AgendaApp br/edu/impacta/ads/*
@@ -36,7 +36,8 @@ Agenda para cadastrar, localizar, excluir contatos.
 ```
 2. Surgira a interface do programa para interação com usuário.
 
-	![Interface principal do sistema](https://github.com/leandrobudau/aula03/blob/master/Agenda/screen-main.png)
+	![Interface principal do sistema](https://github.com/leandrobudau/aula03/blob/master/Agenda/screen-main.png)  
+	Imagem de exemplo
 
 
 ## Funcionalidades
