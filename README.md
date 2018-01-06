@@ -15,22 +15,22 @@ Agenda para cadastrar, localizar, excluir contatos.
    + [Linux UBUNTU](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
    + Para os demais sistemas operacionais, por favor, consultar a internet.
 	
-2. Fazer o clone do repositório
+2. Fazer o clone do repositório (Copie o cédigo e cole n0 prompt de comando).
 ```javascript
 	git clone https://github.com/rseteves/aula03.git
 ```
 ## Compilação
-1. Entrar na pasta source do projeto
+1. Entrar na pasta source do projeto (Copie o código e cole no prompt de comando).
 ```javascript
 	cd aula03/Agenda/src
 ```
-2. Fazer a compilação do projeto
+2. Fazer a compilação do projeto (Copie o cédigo e cole no prompt de comando).
 ```javascript
 	javac br/edu/impacta/ads/*.java
 	jar cvfe AgendaApp.jar br.edu.impacta.ads.AgendaApp br/edu/impacta/ads/*
 ```
 ## Rodar o projeto
-1. Para rodar o projeto basta executar a seguinte linha de comando em seu console.
+1. Para rodar o projeto basta executar a seguinte linha de comando em seu console. (Copie o código e cole no prompt de comando).
 ```javascript
 	java -jar AgendaApp.jar
 ```
