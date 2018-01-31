@@ -71,4 +71,16 @@ public class ContatoDaoArquivo implements IContatoDao {
 		return contatos.contains(c);
 	}
 
+	@Override
+	public void excluir(Contato c) {
+		List<Contato> contatos = lerTodos();
+		contatos.remove(c);
+		gravar(contatos);
+	}
+
+	@Override
+	public List<Contato> exibirTodos() {
+		return lerTodos();
+	}
+
 }

@@ -28,4 +28,14 @@ public class ContatoDao implements IContatoDao {
 		return contatos.contains(c);
 	}
 
+	@Override
+	public void excluir(Contato contato) {
+		contatos.remove(contato);
+	}
+
+	@Override
+	public List<Contato> exibirTodos() {
+		return contatos;
+	}
+
 }
